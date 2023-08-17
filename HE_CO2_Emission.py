@@ -4,7 +4,7 @@
 import numpy as np
 import math
 
-
+""" Inputs have to insert by the user """
 activity = input("Insert the title of the activity:\n\n")
 machine_type = int(input("Insert the type of machine:\n(1)Bulldozer \n(2)Wheel Loader "
                      "\n(3)Crawler Loader \n(4)Backhoe Loader \n(5)Backhoe Excavator \n(6)Excavator "
