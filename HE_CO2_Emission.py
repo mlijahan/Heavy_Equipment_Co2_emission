@@ -13,8 +13,8 @@ machine_type = int(input("Insert the type of machine:\n(1)Bulldozer \n(2)Wheel L
                      "\n(9)MotorGrader \n(10)scraper \n(11)Road Roller\n\n"))
 manufacturer = input("Insert the manufacturer name of machine:\n\n")
 model_name = input("Insert the model name of machine:\n\n")
-temperature = int(input("Insert the mean of the temperature in duration of doing activity (C) :\n\n"))
-altitude = int(input("Insert the mean of the elevation of the job site (m) :\n\n"))
+temperature = int(input("Insert the mean of the temperature in duration of doing activity (C) (-88 to +58) :\n\n"))
+altitude = int(input("Insert the mean of the elevation of the job site (m) (0-3000m) :\n\n"))
 power = int(input("Insert the power of the bulldozer (hp):\n\n"))
 machine_list = []
 
@@ -104,8 +104,8 @@ def bulldozer_co2_emission(co2=10.21, load_factor=0.58):
 
     co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
     print(
-        f'"Real productivity of {machine_name(manufacturer,model_name)}"'
-        f' during doing "{activity}" is "{np.round(co2_emission[0], 2)}"')
+        f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
+        f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
     return co2_emission
 
 
@@ -140,8 +140,8 @@ def others_co2_emission(co2=10.21):
 
     co2_emission = np.array(max_load_factor) * np.array(break_fuel_consumption_rate) * real_power() * co2
     print(
-        f'"Real productivity of {machine_name(manufacturer, model_name)}"'
-        f' during doing "{activity}" is "{np.round(co2_emission[0], 2)}"')
+        f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
+        f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
     return co2_emission
 
 
@@ -170,8 +170,8 @@ def wheel_loader_co2_emission(co2=10.21, load_factor=0.48):
 
     co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
     print(
-        f'"Real productivity of {machine_name(manufacturer, model_name)}"'
-        f' during doing "{activity}" is "{np.round(co2_emission[0], 2)}"')
+        f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
+        f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
     return co2_emission
 
 
@@ -200,8 +200,8 @@ def backhoe_loader_co2_emission(co2=10.21, load_factor=0.21):
 
     co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
     print(
-        f'"Real productivity of {machine_name(manufacturer, model_name)}"'
-        f' during doing "{activity}" is "{np.round(co2_emission[0], 2)}"')
+        f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
+        f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
     return co2_emission
 
 
@@ -230,8 +230,8 @@ def excavator_co2_emission(co2=10.21, load_factor=0.4):
 
     co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
     print(
-        f'"Real productivity of {machine_name(manufacturer, model_name)}"'
-        f' during doing "{activity}" is "{np.round(co2_emission[0], 2)}"')
+        f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
+        f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
     return co2_emission
 
 
@@ -260,8 +260,8 @@ def skid_steer_loader_co2_emission(co2=10.21, load_factor=0.23):
 
     co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
     print(
-        f'"Real productivity of {machine_name(manufacturer, model_name)}"'
-        f' during doing "{activity}" is "{np.round(co2_emission[0], 2)}"')
+        f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
+        f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
     return co2_emission
 
 
@@ -290,8 +290,8 @@ def road_roller_co2_emission(co2=10.21, load_factor=0.59):
 
     co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
     print(
-        f'"Real productivity of {machine_name(manufacturer, model_name)}"'
-        f' during doing "{activity}" is "{np.round(co2_emission[0], 2)}"')
+        f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
+        f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
     return co2_emission
 
 
