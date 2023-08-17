@@ -102,7 +102,8 @@ def bulldozer_co2_emission(co2=10.21, load_factor=0.58):
         else:
             break_fuel_consumption_rate.append(0.254)
 
-    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
+    # 0.26 is convert factor of fuel consumption in Kg to gallon
+    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * 0.26 * co2
     print(
         f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
         f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
@@ -138,7 +139,8 @@ def others_co2_emission(co2=10.21):
             break_fuel_consumption_rate.append(0.254)
             max_load_factor.append(0.34)
 
-    co2_emission = np.array(max_load_factor) * np.array(break_fuel_consumption_rate) * real_power() * co2
+    # 0.26 is convert factor of fuel consumption in Kg to gallon
+    co2_emission = np.array(max_load_factor) * np.array(break_fuel_consumption_rate) * real_power() * 0.26 * co2
     print(
         f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
         f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
@@ -168,7 +170,8 @@ def wheel_loader_co2_emission(co2=10.21, load_factor=0.48):
         else:
             break_fuel_consumption_rate.append(0.254)
 
-    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
+    # 0.26 is convert factor of fuel consumption in Kg to gallon
+    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * 0.26 * co2
     print(
         f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
         f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
@@ -198,7 +201,8 @@ def backhoe_loader_co2_emission(co2=10.21, load_factor=0.21):
         else:
             break_fuel_consumption_rate.append(0.254)
 
-    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
+    # 0.26 is convert factor of fuel consumption in Kg to gallon
+    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * 0.26 * co2
     print(
         f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
         f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
@@ -228,7 +232,8 @@ def excavator_co2_emission(co2=10.21, load_factor=0.4):
         else:
             break_fuel_consumption_rate.append(0.254)
 
-    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
+    # 0.26 is convert factor of fuel consumption in Kg to gallon
+    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * 0.26 * co2
     print(
         f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
         f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
@@ -258,7 +263,8 @@ def skid_steer_loader_co2_emission(co2=10.21, load_factor=0.23):
         else:
             break_fuel_consumption_rate.append(0.254)
 
-    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
+    # 0.26 is convert factor of fuel consumption in Kg to gallon
+    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * 0.26 * co2
     print(
         f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
         f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
@@ -288,7 +294,8 @@ def road_roller_co2_emission(co2=10.21, load_factor=0.59):
         else:
             break_fuel_consumption_rate.append(0.254)
 
-    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * co2
+    # 0.26 is convert factor of fuel consumption in Kg to gallon
+    co2_emission = load_factor * np.array(break_fuel_consumption_rate) * real_power() * 0.26 * co2
     print(
         f'"CO2 emission of {machine_name(manufacturer, model_name)}"'
         f' with diesel fuel "{activity}" is "{np.round(co2_emission[0], 2)}"Kg CO2 per hour')
