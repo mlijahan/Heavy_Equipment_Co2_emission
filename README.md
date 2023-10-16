@@ -25,5 +25,6 @@ USERS HAVE TO HAVE KNOWLEDGE ABOUT THE MODEL AND MACHINE'S POWER INTERVAL AND JO
 References:
 
 [1] Mahmoud A. Aboelhassan and Ibrahim H. Hashim. (2018). Assesing Carbon Dioxide (CO2) of Earthworks’ Operations during road construction. Engineering Research Journal, Vol. 41, No. 3 , July 2018, PP: 205-213.
+
 [2] Jan Krantz. (2013). An Earthworks Energy Model for Practical use in Road Construction. Master of Thesis. Luleå University of Technology Department of Civil, Environmental and Natural resources engineering.
 
